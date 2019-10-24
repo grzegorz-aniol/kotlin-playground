@@ -2,12 +2,13 @@ package org.gangel.moreclasses
 
 data class Person(val name: String, val age: Int) {
 
-    // nested singletone comparator
-    object CompareByAge: Comparator<Person> {
-        override fun compare(p0: Person?, p1: Person?): Int {
-            return Comparator.naturalOrder<Int>().compare(p0?.age, p1?.age)
-        }
+    // nested singleton object
+    object InternalItem {
+        var value: Int = 0
+        fun get() = ++value
     }
+
+    fun get() = InternalItem.get()
 }
 
 fun main(args: Array<String>) {
@@ -16,6 +17,9 @@ fun main(args: Array<String>) {
     val p3 = Person("Maria", 18)
 
     // sorting by age
-    listOf(p1, p2, p3).sortedWith(Person.CompareByAge)
-            .forEach { println(it)}
+    listOf(p1, p2, p3)
+            .forEach {
+                println(it)
+                println(it.get())
+            }
 }
