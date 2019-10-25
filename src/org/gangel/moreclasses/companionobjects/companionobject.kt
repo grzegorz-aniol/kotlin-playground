@@ -10,9 +10,15 @@ data class Car(val name: String, val type: String, val power: Int){
         }
     }
 
+    object Internal {
+        fun hello() {
+            print("Hello from Internal")
+        }
+    }
 }
 
 fun main(args: Array<String>) {
     val c1 = Car.buildFromString("Fiat,500,500")
     println(c1)
+    Car.Internal.hello()
 }
