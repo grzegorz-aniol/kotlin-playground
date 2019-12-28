@@ -15,10 +15,16 @@ private val globalSeed: Int = 123
 //fun Person.hash(): Int =
 //	name.hashCode() % globalSeed
 
-// However extension function have access to public fields
+// However extension function has access to public fields
 fun Person.printKey() =
 	println(publicKey)
 
-// Extension function have access to private fields in same file
+// Extension function has access to private fields in same file
 fun Person.mutate(): Int =
 	publicKey.hashCode() % globalSeed
+
+
+fun main() {
+	val p1 = Person("Greg", "qwerty")
+	p1.printKey()
+}
