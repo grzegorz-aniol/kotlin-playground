@@ -28,4 +28,3 @@ fun String.pack() = this.replace(Regex("\\s+"), " ").trim()
 
 
 fun LocalDateTime.toISO(): String = this.toString()
-
