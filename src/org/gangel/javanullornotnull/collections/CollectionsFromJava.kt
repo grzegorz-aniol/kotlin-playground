@@ -5,6 +5,18 @@ import org.gangel.javanullornotnull.VertexProcessor
 
 fun main(args: Array<String>) {
     val proc1 = VertexProcessorVariant1()
+
+    val vertices = proc1.generate()
+
+    val v = vertices.first()
+    val id = v.id
+    val type = v.type
+    val typeWithNullable = v.typeWithNullable
+
+    val typeNotNull = "Person"
+    val typeWithNull: String? = null
+    v.setTypeWithNullCheck(typeNotNull)
+    // v.setTypeWithNullCheck(typeWithNull) // type mismatch compiler error
 }
 
 // each of method signature is proper
@@ -21,7 +33,7 @@ class VertexProcessorVariant2 : VertexProcessor() {
 }
 
 class VertexProcessorVariant3 : VertexProcessor() {
-    override fun process(elements: MutableList<Vertex>?) {
+    override fun process(elements: MutableList<Vertex?>) {
     }
 }
 
