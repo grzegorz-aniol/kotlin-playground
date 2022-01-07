@@ -9,7 +9,7 @@ fun main(args : Array<String>) {
     nextMethod("Welcome!")
     variables()
     nullVariables()
-    variablesTypeDeducing()
+    variablesTypeInference()
     newObjectCreation()
 }
 
@@ -41,9 +41,9 @@ fun nullVariables() {
     }
 }
 
-fun variablesTypeDeducing() {
+fun variablesTypeInference() {
     // You don't need to always specify value types
-    // Compiler may deduce it by right side value
+    // Compiler may inference it by right side value
     val stringValue = "This is a string"
     val numericValue = 123
     val piValue = 3.1415926
