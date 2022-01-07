@@ -18,12 +18,12 @@ fun nextMethod(s : String) = println(s)
 
 fun variables() {
     val immutableVariable : String = "Welcome"
-    var mutableVariable : Int
+    var mutableVariable : Int = 256
 
     mutableVariable = 123
 
     // can't change immutable variable
-    // immutableVariable = "Hello" <- ERROR
+//    immutableVariable = "Hello" // <- ERROR
 
 }
 
@@ -38,6 +38,7 @@ fun nullVariables() {
     // and you don't need to check it
     if (notNullValue != null) {
         // then bla, bla, bla
+        println(notNullValue)
     }
 }
 
@@ -47,14 +48,18 @@ fun variablesTypeInference() {
     val stringValue = "This is a string"
     val numericValue = 123
     val piValue = 3.1415926
+    val listOfValues = listOf("ABC", "CDE", "FGH")
+    val map = mapOf(1 to "One", 2 to "Two", 3 to "Three")
+    // Hint: enable in Intellij "Inlay hints"
 
     println(stringValue)
     println(numericValue)
     println(piValue)
+    println(listOfValues)
 }
 
 fun newObjectCreation() {
-    // no 'new' keyword, variable type is determined by right hand value
+    // no 'new' keyword, variable type is determined by right-hand value
     val obj1 = Car("Ferrari")
 
     // 'name' is public by default

@@ -8,8 +8,8 @@ class OrderItem(val product: String, val amount: Long, val price: Long) {
 }
 
 // calculating the total cost of the order
-fun calculateTotalPrice(items: List<OrderItem>, deliveryCost: Long, discount: (Long) -> Long):Long {
-    val totalSum: Long = items.fold(0L) { acc, orderItem ->  acc + orderItem.amount * orderItem.price }
+fun calculateTotalPrice(items: List<OrderItem>, deliveryCost: Long, discount: (Long) -> Long): Long {
+    val totalSum: Long = items.fold(0L) { acc, orderItem -> acc + orderItem.amount * orderItem.price }
     return totalSum + deliveryCost - discount(totalSum)
 }
 
@@ -21,9 +21,11 @@ fun discountStrategy(price: Long): Long {
 fun main(args: Array<String>) {
 
     // demo data
-    val listOf = listOf(OrderItem("Getting Things Done, D.Allen", 1, 123),
-            OrderItem("Spring in action, C.Walls", 1, 234),
-            OrderItem("Handmade bookmark", 3, 2))
+    val listOf = listOf(
+        OrderItem("Getting Things Done, D.Allen", 1, 123),
+        OrderItem("Spring in action, C.Walls", 1, 234),
+        OrderItem("Handmade bookmark", 3, 2)
+    )
 
     // How we can use lambda?
 

@@ -6,6 +6,10 @@ class Person(private val name: String, val publicKey: String) {
 	// Then function has access to private field
 	fun Person.somethingStrange(): String =
 		name.replace("0", "-")
+
+	fun otherFunction() {
+		this.somethingStrange()
+	}
 }
 
 private val globalSeed: Int = 123

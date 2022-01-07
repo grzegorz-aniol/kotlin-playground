@@ -1,4 +1,5 @@
 @file:JvmName("FunWithFunctions")
+
 package org.gangel.funwithfunctions
 
 fun main(args: Array<String>) {
@@ -17,11 +18,11 @@ fun main(args: Array<String>) {
 
 }
 
-fun defaultParameters(name: String, age:Int = 18) {
+fun defaultParameters(name: String, age: Int = 18) {
     println("Person: $name, age: $age")
 }
 
 @JvmOverloads
-fun defaultParametersWithOverloadForJava(name: String, age:Int = 18) {
+fun defaultParametersWithOverloadForJava(name: String, age: Int = 18) {
     println("Person: $name, age: $age")
 }
