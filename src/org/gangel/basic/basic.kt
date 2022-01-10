@@ -3,7 +3,7 @@ package org.gangel.basic
 // basic HelloWorld example
 
 // static functions can be declared without the class
-// in fact basic.class will be created to aggregate this method
+// in fact BasicKt class will be created to aggregate this method
 fun main(args : Array<String>) {
     println("Hello world!")   // no semicolon at the end of line ! :)
     nextMethod("Welcome!")
@@ -28,17 +28,18 @@ fun variables() {
 }
 
 fun nullVariables() {
-    var nullableValue : Int?
+    var nullableValue: Int?
     nullableValue = null
 
-    var notNullValue : String = "This need to be initialized with value"
+    var notNullValue: String = "This need to be initialized with value"
     // notNullValue = null <-- ERROR
+}
 
-    // this condition is always TRUE
-    // and you don't need to check it
-    if (notNullValue != null) {
+fun nullSmartCast(value: Int?) {
+    // print(value + 2) // <-- ERROR - you can't use value variable which may be null
+    if (value != null) {
         // then bla, bla, bla
-        println(notNullValue)
+        println(value + 2)
     }
 }
 
