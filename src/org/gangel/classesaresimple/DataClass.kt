@@ -22,10 +22,10 @@ fun main(args: Array<String>) {
     println("Data3 = $data3")
 
     var equality = data2.copy() == data2
-    println("Copies are equal? " + equality)
+    println("Copies are equal? $equality")
 
     var otherValue = data2.copy()
     var hashCodeEquality = (data2.hashCode() == otherValue.hashCode())
-    println("Hashcode for copies equal? " + hashCodeEquality)
+    println("Hashcode for copies equal? $hashCodeEquality")
 }
 

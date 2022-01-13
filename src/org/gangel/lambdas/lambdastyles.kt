@@ -38,7 +38,9 @@ fun main(args: Array<String>) {
     println(total1)
 
     // as it's the last argument it can be excluded from brackets
-    val total2 = calculateTotalPrice(listOf, 5) { it -> Math.round(0.05 * it) }
+    val total2 = calculateTotalPrice(listOf, 5) {
+            value -> Math.round(0.05 * value)
+    }
     println(total2)
 
     // in case of just one lambda's argument, the name can be implicit ('it')
