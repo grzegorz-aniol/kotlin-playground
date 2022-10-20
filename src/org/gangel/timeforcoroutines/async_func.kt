@@ -1,13 +1,9 @@
 package org.gangel.timeforcoroutines
 
-import kotlinx.coroutines.async
-import kotlinx.coroutines.awaitAll
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 
 fun main() {
-	runBlocking {
+	runBlocking(Dispatchers.Default) {
 		asyncCalls()
 	}
 }
