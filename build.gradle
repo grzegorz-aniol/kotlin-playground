@@ -48,5 +48,6 @@ compileKotlin {
 compileTestKotlin {
     kotlinOptions {
         jvmTarget = "17"
+        kotlinOptions.freeCompilerArgs += "-Xuse-k2=true"
     }
 }
