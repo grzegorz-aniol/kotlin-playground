@@ -3,7 +3,7 @@ package org.gangel.timeforcoroutines
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.*
 
-@UseExperimental(ExperimentalCoroutinesApi::class)
+@OptIn(ExperimentalCoroutinesApi::class)
 fun main() = runBlocking(Dispatchers.Default) {
 
     fun CoroutineScope.numbersFrom(start: Int) = produce {
