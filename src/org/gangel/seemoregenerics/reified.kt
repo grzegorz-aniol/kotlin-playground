@@ -16,7 +16,7 @@ inline fun <reified T> filterTypes(input: List<*>) : List<T> {
             .toList()
 }
 
-fun main(args: Array<String>) {
+fun main() {
 
     val list = listOf("Mark", "Jane", 23, "Lisa", 38, "Greg")
 

@@ -18,7 +18,7 @@ fun discountStrategy(price: Long): Long {
     return Math.round(0.05 * price)
 }
 
-fun main(args: Array<String>) {
+fun main() {
 
     // demo data
     val listOf = listOf(

@@ -3,7 +3,7 @@ package org.gangel.dosomestatements
 import java.util.*
 import kotlin.collections.ArrayList
 
-fun main(args: Array<String>) {
+fun main() {
     simpleWhenStatement("SecondValue")
     simpleWhenStatement("Something completely different")
     simpleWhenStatement(null)

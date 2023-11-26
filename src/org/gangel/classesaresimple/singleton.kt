@@ -19,7 +19,7 @@ object GlobalCache {
 
 }
 
-fun main(args: Array<String>) {
+fun main() {
     GlobalCache.add("123", "Patrick")
     GlobalCache.add("345", "Patrick")
     GlobalCache.add("45111", "Sussan")

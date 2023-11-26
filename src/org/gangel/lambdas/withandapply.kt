@@ -5,7 +5,7 @@ data class Product(val id: String, val desc: String, val price: Long) {
     var count: Int = 0
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val p1 = Product("ABD123", "Dell laptop", 45666)
 
     p1.apply { println("Product: $desc, Price: $price") }

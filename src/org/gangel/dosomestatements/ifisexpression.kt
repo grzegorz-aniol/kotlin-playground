@@ -1,6 +1,6 @@
 package org.gangel.dosomestatements
 
-fun main(args: Array<String>) {
+fun main() {
     ifvalue()
 
     elvisOperator("Not null value")

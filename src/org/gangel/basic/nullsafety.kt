@@ -1,6 +1,6 @@
 package org.gangel.basic
 
-fun main(args: Array<String>) {
+fun main() {
     printLength("This is short text")
     printLength(null)
     nullTypeAssignment()

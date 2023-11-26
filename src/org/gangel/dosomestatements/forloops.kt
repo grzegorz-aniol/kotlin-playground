@@ -1,6 +1,6 @@
 package org.gangel.dosomestatements
 
-fun main(args: Array<String>) {
+fun main() {
 
     // for loop with inclusive, closed range
     for (i in 1..10) {

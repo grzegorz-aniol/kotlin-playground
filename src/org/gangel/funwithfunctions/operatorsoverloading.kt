@@ -1,6 +1,6 @@
 package org.gangel.funwithfunctions
 
-fun main(args: Array<String>) {
+fun main() {
     val xmlOutput = "html" % ("body" % ("p" % "Welcome!"))
     println(xmlOutput)
 }

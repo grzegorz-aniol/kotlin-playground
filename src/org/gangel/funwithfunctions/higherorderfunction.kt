@@ -2,7 +2,7 @@ package org.gangel.funwithfunctions
 
 import java.math.BigDecimal
 
-fun main(args: Array<String>) {
+fun main() {
     checkPrimes(::isPrimeMethod1)
 }
 

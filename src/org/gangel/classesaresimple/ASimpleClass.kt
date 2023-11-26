@@ -6,7 +6,7 @@ class AClass(var firstName: String, var lastName: String, var age: Int) {}
 
 
 // Don't you believe ?
-fun main(args: Array<String>) {
+fun main() {
     val obj1 = AClass("John", "Ford", 99)
 
     println("His name is ${obj1.firstName}")

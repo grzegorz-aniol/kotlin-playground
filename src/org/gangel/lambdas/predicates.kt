@@ -1,6 +1,6 @@
 package org.gangel.lambdas
 
-fun main(args: Array<String>) {
+fun main() {
     val data = listOf<Int>(2, 4, 3, 1, 3, 3, 4, 2, 0, -12, 123)
 
     val result = data.any { it % 2 == 0 }

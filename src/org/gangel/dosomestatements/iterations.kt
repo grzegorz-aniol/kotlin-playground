@@ -2,7 +2,7 @@ package org.gangel.dosomestatements
 
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
     iterationOverList()
     iterationOverListWithIndex()
     iterationOverMapEntires()

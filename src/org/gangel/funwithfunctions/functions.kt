@@ -2,7 +2,7 @@
 
 package org.gangel.funwithfunctions
 
-fun main(args: Array<String>) {
+fun main() {
     // we can omitt default parameters
     defaultParameters("Anna", 22)
     defaultParameters("Patrick")

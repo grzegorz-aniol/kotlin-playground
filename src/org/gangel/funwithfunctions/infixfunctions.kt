@@ -3,7 +3,7 @@ package org.gangel.funwithfunctions
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-fun main(args: Array<String>) {
+fun main() {
     val query = "select a, min(b) from".embedVersion1("select x,y from Z")
     println(query)
 

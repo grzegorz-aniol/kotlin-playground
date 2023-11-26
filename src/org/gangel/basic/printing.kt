@@ -4,7 +4,7 @@ import kotlin.random.Random
 
 // Strings interpolation and multi-lines demo
 
-fun main(args : Array<String>) {
+fun main() {
     var name = "Marcus Miller"
     println("His name is $name")
 

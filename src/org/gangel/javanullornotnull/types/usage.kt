@@ -2,7 +2,7 @@ package org.gangel.javanullornotnull.types
 
 import org.gangel.javanullornotnull.Vertex
 
-fun main(args: Array<String>) {
+fun main() {
     val obj = Vertex()
 
     val id: String = obj.id

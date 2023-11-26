@@ -1,6 +1,6 @@
 package org.gangel.dosomestatements
 
-fun main(args: Array<String>) {
+fun main() {
     println(parseInteger("123"))
     println(parseInteger("Can't parse it!"))
 }

@@ -2,7 +2,7 @@ package org.gangel.othercollections
 
 import org.gangel.javanullornotnull.Vertex
 
-fun main(args: Array<String>) {
+fun main() {
 
     val list1 = listOf("alpha", "beta", "gamma")
 

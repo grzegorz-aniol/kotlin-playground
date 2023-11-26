@@ -11,7 +11,7 @@ data class Person(val name: String, val age: Int) {
     fun get() = InternalItem.get()
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val p1 = Person("Lisa", 44)
     val p2 = Person("Kevin", 34)
     val p3 = Person("Maria", 18)

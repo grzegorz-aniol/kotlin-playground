@@ -3,7 +3,7 @@ package org.gangel.javanullornotnull.collections
 import org.gangel.javanullornotnull.Vertex
 import org.gangel.javanullornotnull.VertexProcessor
 
-fun main(args: Array<String>) {
+fun main() {
     val proc1 = VertexProcessorVariant1()
 
     val vertices = proc1.generate()

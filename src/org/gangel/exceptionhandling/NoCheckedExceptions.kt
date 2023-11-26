@@ -3,7 +3,7 @@ package org.gangel.exceptionhandling
 import java.io.FileReader
 import java.io.IOException
 
-fun main(args: Array<String>) {
+fun main() {
     exceptionHandling()
     uncheckedExceptions()
 }

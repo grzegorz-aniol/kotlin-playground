@@ -4,7 +4,7 @@ package org.gangel.basic
 
 // static functions can be declared without the class
 // in fact BasicKt class will be created to aggregate this method
-fun main(args : Array<String>) {
+fun main() {
     println("Hello world!")   // no semicolon at the end of line ! :)
     nextMethod("Welcome!")
     variables()

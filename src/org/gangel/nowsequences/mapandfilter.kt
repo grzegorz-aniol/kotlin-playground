@@ -1,6 +1,6 @@
 package org.gangel.nowsequences
 
-fun main(args: Array<String>) {
+fun main() {
     val data = listOf(1, 3, 9, 10, 11, 44, 54, 23, 43, 22, 48, 10)
 
     var counter = 0

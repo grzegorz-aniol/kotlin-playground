@@ -9,7 +9,7 @@ import java.math.BigDecimal
 import java.util.concurrent.atomic.LongAdder
 
 
-fun main(args: Array<String>) = runBlocking(Dispatchers.Default) {
+fun main() = runBlocking(Dispatchers.Default) {
 
     val ranges = Channel<BigDecimal>()
     val minorDigit = arrayOf(BigDecimal.valueOf(1),BigDecimal.valueOf(3),BigDecimal.valueOf(7),BigDecimal.valueOf(9))

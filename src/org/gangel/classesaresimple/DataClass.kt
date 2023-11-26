@@ -11,7 +11,7 @@ import java.time.LocalDateTime
 data class DataClass(val id: String, val name: String, var lastSeen: LocalDateTime) {
 }
 
-fun main(args: Array<String>) {
+fun main() {
     var data1 = DataClass("12", "Mark", LocalDateTime.now().minusDays(10))
     println("Data1 = $data1")
 

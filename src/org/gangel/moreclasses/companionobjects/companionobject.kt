@@ -17,7 +17,7 @@ data class Car(val name: String, val type: String, val power: Int){
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val c1 = Car.buildFromString("Fiat,500,500")
     println(c1)
     Car.Internal.hello()

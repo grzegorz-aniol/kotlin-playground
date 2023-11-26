@@ -2,7 +2,7 @@ package org.gangel.funwithfunctions
 
 import java.time.LocalDateTime
 
-fun main(args: Array<String>) {
+fun main() {
     val str =
             """
                     Let's   try to compress   this string          

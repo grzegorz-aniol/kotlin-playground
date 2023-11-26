@@ -21,7 +21,7 @@ class Person2(fn: String) {
     val firstName = fn
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val p1 = Person1("Peter", "Pan")
     p1.lastSeen = LocalDateTime.now() // can change mutable property
     println("${p1.firstName} ${p1.lastName}")

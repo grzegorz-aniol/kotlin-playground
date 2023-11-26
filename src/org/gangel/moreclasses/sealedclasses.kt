@@ -13,7 +13,7 @@ class PartiallyCompleted(val endTime: LocalDateTime, val amountDone: Currency): 
 class Outdated(): TransactionState()
 class UnknownState(): TransactionState()
 
-fun main(args: Array<String>) {
+fun main() {
     val ts: TransactionState = InProgress(LocalDateTime.now(), Currency.getInstance(Locale.US))
 
     val newState = when(ts) {
